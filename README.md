@@ -8,10 +8,13 @@
 -- users.py	实现蓝图 users，提供登录、注册的功能  
 -- todos.py	实现蓝图 todos，提供增加、修改、删除待做事项 todo 的功能  
 
--- 数据库设计
-   -- 表的设计
-1.2 数据库脚本 db.sql
-2. Flask 实例 app.py
+
+
+      -- 数据库设计
+         -- 表的设计
+         -- 数据库脚本 db.sql
+
+      -- Flask 实例 app.py
 3. 入口 main.py
 3.1 导入相关模块
 3.2 页面 / 的视图函数
