@@ -21,9 +21,12 @@
         
         后端实现：
         db.sql	创建数据库的 SQL 脚本文件  
+        
         app.py	Flask 应用程序实例以及配置  
         main.py	Flask 应用程序的入口  
-        db.py	提供访问数据库的功能函数  
+        
+        db.py	提供访问数据库的功能函数 
+         
         users.py	实现蓝图 users，提供登录、注册的功能  
         todos.py	实现蓝图 todos，提供增加、修改、删除待做事项 todo 的功能 
         
