@@ -1,6 +1,6 @@
 # study_flask
 
-## 功能简介
+## 1. 功能简介
 ### 功能简介
 
     使用 Flask 开发一个功能完整的 Web 应用程序 —— 待做清单，该 Web 应用程序记录待做事项。程序提供了用户注册的功能，用户登录后，录入的待做事项被记录在服务端，如果换一台机器，使用浏览器登录后，仍然能够看到已经录入的待做事项。
@@ -71,7 +71,7 @@
     -- 蓝图 users 定义了页面 /users/login 、/users/register、/users/logout，登录和注册的页面处理函数是 login 和 register，最终调用 db.js 中的数据库访问函数 login 和 register，实现登录和注册的功能；
     -- 蓝图 todos 定义了页面 /todos/add、/todos/update、/todos/delete，它们的页面处理函数是 addTodo、updateTodo、deleteTodo，最终调用 db.js 中的数据库访问函数 addTodo、updateTodo、deleteTodo，实现增加、更新、删除待做事项的功能。
 
-## 后端实现
+## 2. 后端实现
 
       -- 数据库设计
             -- 表的设计
@@ -98,7 +98,7 @@
             -- 请求 /todos/update 页面
             -- 请求 /todos/delete 页面
 
-## 前端实现
+## 3. 前端实现
 
     -- 首页模板 templates/index.html
         -- 引入相关的库
