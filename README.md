@@ -7,17 +7,17 @@
 
 -- 涉及的知识点
 
-     - 模板
-     - WTF 表单和表单验证
-     - 蓝图
-     - ORM 访问数据库
-     - 会话 Session
+     模板
+     WTF 表单和表单验证
+     蓝图
+     ORM 访问数据库
+     会话 Session
 
 -- 运行程序
 
-     - 源程序下载
+     -- 源程序下载
      
-     - 源文件目录
+     -- 源文件目录
         
         后端实现：
         db.sql	创建数据库的 SQL 脚本文件  
@@ -36,7 +36,7 @@
         
         static/script.js	调用后端服务的接口 
      
-     - 安装相关的库 requirements.txt
+     -- 安装相关的库 requirements.txt
      
         pip3 install flask
         pip3 install pymysql
@@ -45,30 +45,31 @@
         pip3 install wtforms
         pip3 install flask-wtf
      
-     - 设置数据库
+     -- 设置数据库
      
         使用 mysql 数据库，用户名为 root，密码为 ‘123456’，可以在 db.py 中修改用户名和密码。
         启动 mysql 后，执行数据库脚本 db.sql 创建数据库 todoDB。
      
-     - 运行程序
+     -- 运行程序
      
         main.py 是程序的入口
 
 -- 程序的结构
+
 ![image](https://user-images.githubusercontent.com/48540417/114809249-6783f800-9ddc-11eb-8a5b-21f09245bbd8.png)
 
     前端的核心操作如下：
-     - 在 login.html 中，通过 POST 方法向页面 /users/login 提交表单请求完成登录；
-     - 在 register.html 中，通过 POST 方法向页面 /users/register 提交表单请求完成登录；
-     - 访问页面 /users/logout 退出系统；
-     - 在 script.js 中，函数 addTodo () 通过 Ajax 向页面 /todos/add 请求增加待做事项；
-     - 在 script.js 中，函数 updateTodo () 通过 Ajax 向页面 /todos/update 请求更新待做事项；
-     - 在 script.js 中，函数 deleteTodo () 通过 Ajax 向页面 /todos/delete 请求删除待做事项。
+    -- 在 login.html 中，通过 POST 方法向页面 /users/login 提交表单请求完成登录；
+    -- 在 register.html 中，通过 POST 方法向页面 /users/register 提交表单请求完成登录；
+    -- 访问页面 /users/logout 退出系统；
+    -- 在 script.js 中，函数 addTodo () 通过 Ajax 向页面 /todos/add 请求增加待做事项；
+    -- 在 script.js 中，函数 updateTodo () 通过 Ajax 向页面 /todos/update 请求更新待做事项；
+    -- 在 script.js 中，函数 deleteTodo () 通过 Ajax 向页面 /todos/delete 请求删除待做事项。
     
     后端的核心操作如下：
-     - Flask 程序使用了 2 个蓝图：users 和 todos；
-     - 蓝图 users 定义了页面 /users/login 、/users/register、/users/logout，登录和注册的页面处理函数是 login 和 register，最终调用 db.js 中的数据库访问函数 login 和 register，实现登录和注册的功能；
-     - 蓝图 todos 定义了页面 /todos/add、/todos/update、/todos/delete，它们的页面处理函数是 addTodo、updateTodo、deleteTodo，最终调用 db.js 中的数据库访问函数 addTodo、updateTodo、deleteTodo，实现增加、更新、删除待做事项的功能。
+    -- Flask 程序使用了 2 个蓝图：users 和 todos；
+    -- 蓝图 users 定义了页面 /users/login 、/users/register、/users/logout，登录和注册的页面处理函数是 login 和 register，最终调用 db.js 中的数据库访问函数 login 和 register，实现登录和注册的功能；
+    -- 蓝图 todos 定义了页面 /todos/add、/todos/update、/todos/delete，它们的页面处理函数是 addTodo、updateTodo、deleteTodo，最终调用 db.js 中的数据库访问函数 addTodo、updateTodo、deleteTodo，实现增加、更新、删除待做事项的功能。
 
 ## 后端实现
 
